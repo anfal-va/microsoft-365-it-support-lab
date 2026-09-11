@@ -1,12 +1,12 @@
 # Microsoft 365 Administration & IT Support Lab
 
-A hands-on Microsoft 365 Business Premium lab created to practice common L1 IT Support and Microsoft 365 administration tasks in a simulated business environment.
+A hands-on Microsoft 365 Business Premium lab built to practice common L1 IT Support and Microsoft 365 administration tasks in a small business-style environment.
 
 ## Overview
 
-This project simulates a small business Microsoft 365 environment and focuses on practical user, email, identity, device, and collaboration support tasks.
+I set up a Microsoft 365 environment with test users and worked through common support and administration scenarios involving user accounts, email, authentication, devices, and collaboration tools.
 
-The lab was built to understand how Microsoft 365 services work together and to practice basic troubleshooting workflows that can be relevant to an L1 IT Support role.
+The main focus was understanding where to check when a user or device has an issue and practicing the basic administrative actions used to resolve or investigate it.
 
 ## Environment
 
@@ -22,83 +22,62 @@ The lab was built to understand how Microsoft 365 services work together and to 
 
 ### Microsoft 365 Admin Center
 
-- Created and managed user accounts
-- Practiced password reset procedures
-- Reviewed Microsoft 365 licenses and enabled services
-- Worked with shared mailboxes
+Created and managed test user accounts, practiced password resets, reviewed Microsoft 365 licenses and services, and worked with shared mailboxes.
 
 ### Exchange Online
 
-- Performed message tracing for a test email
-- Reviewed message delivery events and delivery status
-- Configured mailbox Full Access permissions
+Used Message Trace to check the delivery of a test email and reviewed the message events and delivery status. Also configured Full Access mailbox permissions for an IT Support account.
 
 ### Microsoft Entra ID
 
-- Reviewed user account information
-- Investigated user sign-in logs
-- Registered Microsoft Authenticator for MFA
-- Created and tested a Conditional Access policy requiring MFA
+Reviewed user accounts and sign-in activity, registered Microsoft Authenticator for MFA, and created and tested a Conditional Access policy requiring MFA for a test user.
 
 ### Microsoft Intune
 
-- Configured automatic Windows enrollment
-- Enrolled a Windows PC into Intune
-- Reviewed device compliance status
-- Investigated a device compliance result
-- Performed manual device synchronization
-- Created a Microsoft 365 Apps deployment
-- Checked BitLocker recovery-key availability
+Configured automatic Windows enrollment and enrolled a Windows PC into Intune. Reviewed the device's compliance status, investigated a compliance result, performed a manual device sync, configured a Microsoft 365 Apps deployment, and checked for the availability of a BitLocker recovery key.
 
 ### Microsoft Teams
 
-- Created a private Team
-- Added a user as a Team member
-- Practiced private Team access management
+Created a private Team and added a test user as a member to practice managing access to a private Team.
 
 ### SharePoint
 
-- Managed site/team membership
-- Added an IT Support account as a Team owner
+Managed the site's membership and added the IT Support account as a Team owner.
 
 ## L1 Troubleshooting Scenarios Practiced
 
-- User account and access issues
-- Password and MFA-related issues
-- Sign-in investigation using Entra ID logs
-- Email delivery investigation using Message Trace
-- Mailbox permission issues
-- Windows device enrollment
-- Device compliance investigation
-- Application deployment
-- Device synchronization
-- Teams and SharePoint access management
+The lab included basic troubleshooting scenarios involving user access, passwords, MFA, sign-in activity, email delivery, mailbox permissions, Windows device enrollment, device compliance, application deployment, and Teams/SharePoint access.
 
 ## Key Learning
 
-The lab helped build an understanding of how different Microsoft services work together:
+The lab helped me understand how the main Microsoft 365 services work together and where an L1 technician would typically investigate an issue.
 
-| Service | Purpose |
+| Service | Main Use |
 |---|---|
-| Microsoft Entra ID | Identity and access management |
+| Microsoft Entra ID | User identity, sign-in and access |
 | Microsoft Intune | Device and application management |
 | Exchange Online | Email and mailbox management |
-| Microsoft Teams | Communication and collaboration |
-| SharePoint | Sites, files, and collaboration |
+| Microsoft Teams | Team communication and collaboration |
+| SharePoint | Sites and file collaboration |
 
-### Identity → Device → Application → Access
+## Screenshots
 
-A simplified view of the lab:
+### Exchange Online — Message Trace
 
-```text
-User
-  ↓
-Microsoft Entra ID
-  ↓
-Windows Device
-  ↓
-Microsoft Intune
-  ↓
-Applications & Security Policies
-  ↓
-Teams / SharePoint / Exchange
+![Exchange Message Trace](screenshots/01-exchange-message-trace.png)
+
+### Microsoft Entra ID — MFA Sign-in
+
+![Entra ID MFA Sign-in](screenshots/02-entra-id-mfa-sign-in.png)
+
+### Microsoft Intune — Device Management
+
+![Intune Device Management](screenshots/03-intune-device-management.png)
+
+### Microsoft Intune — Device Compliance
+
+![Intune Device Compliance](screenshots/04-intune-device-compliance.png)
+
+### SharePoint — Team Ownership
+
+![SharePoint Team Ownership](screenshots/05-sharepoint-team-ownership.png)
